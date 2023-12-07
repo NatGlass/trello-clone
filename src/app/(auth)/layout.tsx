@@ -1,13 +1,9 @@
 import { PropsWithChildren } from "react";
 
-const LandingLayout = ({ children }: PropsWithChildren) => {
+const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className="h-full bg-gray-100">
-      {/* Header */}
-      <main className="pt-40 pb-20">{children}</main>
-      {/* Footer */}
-    </div>
+    <div className="h-full flex justify-center items-center">{children}</div>
   );
 };
 
-export default LandingLayout;
+export default Layout;
